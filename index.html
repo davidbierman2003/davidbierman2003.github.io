@@ -1,48 +1,47 @@
+<!DOCTYPE html>
 <html>
 <head>
-  <title>Hello World</title>
+
+<!-- your webpage info goes here -->
+
+    <title>Coding Portfolio</title>
+	
+	<meta name="David Bierman" content="David Bierman" />
+	<meta name="description" content="" />
+
+<!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->	
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	
 </head>
 <body>
- 
-Min: <input id="min">
-Max: <input id="max">
-<button id="say">GENERATE!</button>
- 
-<hr>
 
-<div id="result"></div>
+<!-- webpage content goes here in the body -->
 
-<script>
-function generateRandomNum() {
-// valriables used
-    var min = document.getElementById('min').value;
-    var max = document.getElementById('max').value;
-// convert the variables to strings    
-    var min = Number(min);
-    var max = Number(max);
-    
-// if max is smaller than min switch make min the smaller number and max the larger number     
-    if (max  <  min) {
-   var temp = max;
-    var max = min;
-    var min = temp;
-    document.getElementById('min').value = min;
-    document.getElementById('max').value = max;
-    
-}
-    
-    // make the random number between min and max
-    var html = (max-min)*Math.random()+min;
-    // round the random number down
-    var html = Math.floor(html);
-    // display the results
-    document.getElementById('result').innerHTML = html;
-    
-}
- 
-document.getElementById('say').addEventListener('click', generateRandomNum);
-</script>
- 
+	<div id="page">
+		<div id="logo">
+			<h1><a href="/" id="logoLink">Coding Portfolio</a></h1>
+		</div>
+		<div id="nav">
+			<ul>
+				<li><a href="#/home.html">Home</a></li>
+				<li><a href="file:///Users/biermand/Documents/Website/davidbierman2003.github.io/random_number.html">Random Number Generator</a></li>
+				<li><a href="#/contact.html">Contact</a></li>
+			</ul>	
+		</div>
+		<div id="content">
+			<h2>Home</h2>
+			<p>
+				This is my Coding Portfolio! I coded it all using HTML, CSS and Java Script in order to make it.
+			</p>
+			<p> 
+				
+			</p>
+		</div>
+		<div id="footer">
+			<p>
+			<!--	Webpage made by <a href="/" target="_blank">[David Bierman]</a> -->
+			</p>
+		</div>
+	</div>
 </body>
 </html>
-
