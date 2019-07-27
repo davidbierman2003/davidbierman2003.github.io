@@ -1,21 +1,44 @@
-<!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title> Contact form tutorial</title>
+	<title>Contact Us</title>
+	<style>
+		body 		{font-family:Arial, sans-serif; font-size:13px;}
+		div 		{margin:200px auto 0; width:285px;}
+		fieldset 	{display:inline-block; padding:20px; background:#efefef; border:1px solid #ccc;}
+		legend		{font-size:1.4em; background:#fff; padding:5px 10px; border:1px solid #ddd; }
+		ol 			{list-style:none; padding:0;}
+		li 			{margin:0 0 20px 0;}
+		label 		{display:block;}
+		
+		/* Browser-specific stuff */
+		fieldset 	{-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius:10px;
+					-webkit-box-shadow: 0px 3px 3px #eee; -moz-box-shadow: 0px 3px 3px #eee; box-shadow: 0px 3px 3px #eee; }
+	</style>
 </head>
 <body>
-	<main>
-	
-	<p>SEND E-MAIL</p>	
-	<form class="contact-form" action="contactform.php" method="post">
-	<input type="text" name="name" placeholder="Full name"> <br> <br>
-	<input type="text" name="mail" placeholder="Your e-mail"> <br> <br>
-	<input type="text" name="subject" placeholder="subject"> <br> <br>
-	<textarea name="message" placeholder="Message"></textarea> <br> <br>
-	<button type="submit" name="submit">SEND MAIL</button>
+<div>
+	<form action="thankyou/" method="post">
+		<fieldset>
+		<legend>Contact Form</legend>
+			<ol>
+				<li>
+					<label for="name">Name</label>
+					<input type="text" size="30" name="name" id="name">
+				</li>
+				<li>
+					<label for="">Email Address</label>
+					<input type="text" size="30" name="email">
+				</li>
+				<li>
+					<label for="">Comments</label>
+					<textarea name="comments" rows="6" cols="30"></textarea>
+				</li>
+				<li class="btn">
+					<input type="submit" value="Send">
+				</li>
+			</ol>
+		</fieldset>
 	</form>
-	</main>
-
+</div>
 </body>
 </html>
